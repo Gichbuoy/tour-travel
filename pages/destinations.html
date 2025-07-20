@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kenya's Natural Wonders - Destinations | Tembea Kenya Tours</title>
+    <meta name="description" content="Explore Kenya's most spectacular destinations: Maasai Mara, Diani Beach, Mount Kenya, Amboseli, Lake Nakuru, Samburu, and Tsavo. Discover detailed information, pricing, and authentic reviews." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fagency1754638back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-border">
+        <nav class="container-custom section-padding py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <svg class="w-12 h-12 text-primary" viewBox="0 0 60 60" fill="currentColor">
+                        <path d="M30 5L50 15v30L30 55L10 45V15L30 5z"/>
+                        <circle cx="30" cy="30" r="12" fill="#f5f1e8"/>
+                        <path d="M25 25l10 5-10 5z" fill="currentColor"/>
+                    </svg>
+                    <div>
+                        <span class="text-2xl font-headline font-bold text-primary">Tembea Kenya</span>
+                        <div class="text-sm text-secondary font-semibold">Mwangi Tours</div>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="index.html" class="text-text-secondary hover:text-primary transition-fast">Home</a>
+                    <a href="destinations.html" class="text-primary font-semibold border-b-2 border-accent">Destinations</a>
+                    <a href="tour_packages.html" class="text-text-secondary hover:text-primary transition-fast">Tour Packages</a>
+                    <a href="booking.html" class="text-text-secondary hover:text-primary transition-fast">Book Trip</a>
+                    <a href="contact.html" class="text-text-secondary hover:text-primary transition-fast">Contact</a>
+                    <a href="tour_packages.html" class="btn-primary">Explore Tours</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="lg:hidden p-2 text-primary" id="mobile-menu-btn">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="lg:hidden hidden mt-4 pb-4 border-t border-border" id="mobile-menu">
+                <div class="flex flex-col space-y-4 pt-4">
+                    <a href="index.html" class="text-text-secondary">Home</a>
+                    <a href="destinations.html" class="text-primary font-semibold">Destinations</a>
+                    <a href="tour_packages.html" class="text-text-secondary">Tour Packages</a>
+                    <a href="portfolio.html" class="text-text-secondary hover:text-primary transition-fast">Portfolio</a>
+                    <a href="booking.html" class="text-text-secondary">Book Trip</a>
+                    <a href="contact.html" class="text-text-secondary">Contact</a>
+                    <a href="tour_packages.html" class="btn-primary w-full text-center">Explore Tours</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-[60vh] flex items-center justify-center overflow-hidden parallax-bg" style="background-image: linear-gradient(rgba(45, 80, 22, 0.3), rgba(212, 165, 116, 0.2)), url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3');">
+        <div class="container-custom section-padding text-center text-white relative z-10">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="hero-title mb-6 animate-fade-in">
+                    Kenya's Natural
+                    <span class="text-accent">Wonders</span>
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 leading-relaxed animate-slide-up">
+                    From the legendary Maasai Mara to pristine coastal beaches, discover the diverse landscapes that make Kenya Africa's premier safari destination
+                </p>
+
+                <!-- Destination Filter -->
+                <div class="bg-white/20 backdrop-blur-md rounded-2xl p-6 max-w-2xl mx-auto animate-scale-in">
+                    <div class="flex flex-wrap justify-center gap-3">
+                        <button class="filter-btn active" data-filter="all">All Destinations</button>
+                        <button class="filter-btn" data-filter="safari">Safari</button>
+                        <button class="filter-btn" data-filter="beach">Beach</button>
+                        <button class="filter-btn" data-filter="mountain">Mountain</button>
+                        <button class="filter-btn" data-filter="lake">Lake</button>
+                        <button class="filter-btn" data-filter="cultural">Cultural</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations Grid -->
+    <section class="section-padding bg-surface">
+        <div class="container-custom">
+            <div class="destinations-grid">
+                <!-- Maasai Mara -->
+                <div class="destination-item safari" id="maasai-mara" data-destination="maasai-mara">
+                    <div class="destination-card">
+                        <div class="relative overflow-hidden rounded-t-2xl">
+                            <div class="image-gallery" data-images="[&quot;https://images.unsplash.com/photo-1547036967-23d11aacaee0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&quot;, &quot;https://images.unsplash.com/photo-1516426122078-c23e76319801?q=80&w=2068&auto=format&fit=crop&ixlib=rb-4.0.3&quot;, &quot;https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&quot;]">
+                                <img src="https://images.unsplash.com/photo-1547036967-23d11aacaee0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Maasai Mara Great Migration" class="w-full h-64 object-cover gallery-image active" />
+                                <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?q=80&w=2068&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Big Five Wildlife" class="w-full h-64 object-cover gallery-image" />
+                                <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Maasai Culture" class="w-full h-64 object-cover gallery-image" />
+                            </div>
+                            <div class="absolute top-4 right-4">
+                                <div class="tour-badge">World Famous</div>
+                            </div>
+                            <div class="absolute bottom-4 left-4">
+                                <div class="rating-stars">
+                                    <span class="text-lg">⭐⭐⭐⭐⭐</span>
+                                    <span class="text-white text-sm ml-2">(1,247 reviews)</span>
+                                </div>
+                            </div>
+                            <!-- Gallery Navigation -->
+                            <div class="absolute inset-x-4 bottom-16 flex justify-center space-x-2">
+                                <button class="gallery-dot active" data-slide="0"></button>
+                                <button class="gallery-dot" data-slide="1"></button>
+                                <button class="gallery-dot" data-slide="2"></button>
+                            </div>
+                        </div>
+
+                        <div class="p-8">
+                            <h3 class="text-2xl font-headline font-bold text-primary mb-4">Maasai Mara National Reserve</h3>
+                            
+                            <!-- Description -->
+                            <div class="mb-6">
+                                <p class="text-text-secondary leading-relaxed mb-4">
+                                    Home to the legendary Great Migration, the Maasai Mara is Kenya's crown jewel. Witness over 2 million wildebeest, zebras, and gazelles cross the treacherous Mara River in one of nature's most spectacular events.
+                                </p>
+                                <div class="space-y-2">
+                                    <h4 class="font-semibold text-primary">Trip Highlights:</h4>
+                                    <ul class="text-sm text-text-secondary space-y-1">
+                                        <li class="flex items-center"><span class="text-accent mr-2">✓</span>Great Migration (July-October)</li>
+                                        <li class="flex items-center"><span class="text-accent mr-2">✓</span>Big Five game viewing</li>
+                                        <li class="flex items-center"><span class="text-accent mr-2">✓</span>Maasai cultural experiences</li>
+                                        <li class="flex items-center"><span class="text-accent mr-2">✓</span>Hot air balloon safaris</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Best Visiting Season -->
+                            <div class="bg-primary-50 rounded-lg p-4 mb-6">
+                                <h4 class="font-semibold text-primary mb-2">Best Visiting Season</h4>
+                                <p class="text-sm text-text-secondary">July to October for the Great Migration, December to March for excellent weather and game viewing.</p>
+                            </div>
+
+                            <!-- Pricing -->
+                            <div class="border-t border-border pt-6 mb-6">
+                                <h4 class="font-semibold text-primary mb-4">Package Options</h4>
+                                <div class="grid md:grid-cols-2 gap-4">
+                                    <div class="bg-white p-4 rounded-lg border border-border">
+                                        <div class="flex justify-between items-start mb-2">
+                                            <div class="font-semibold text-primary">Budget Safari</div>
+                                            <div class="text-lg font-bold text-primary">$299/day</div>
+                                        </div>
+                                        <p class="text-xs text-text-secondary">Camping, shared transport</p>
+                                    </div>
+                                    <div class="bg-white p-4 rounded-lg border border-border">
+                                        <div class="flex justify-between items-start mb-2">
+                                            <div class="font-semibold text-primary">Luxury Safari</div>
+                                            <div class="text-lg font-bold text-primary">$1,299/day</div>
+                                        </div>
+                                        <p class="text-xs text-text-secondary">Lodge, private vehicle</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Customer Reviews Summary -->
+                            <div class="border-t border-border pt-6 mb-6">
+                                <h4 class="font-semibold text-primary mb-4">Recent Reviews</h4>
+                                <div class="space-y-3">
+                                    <div class="bg-white p-3 rounded-lg border-l-4 border-accent">
+                                        <div class="flex justify-between items-start mb-2">
+                                            <div class="text-sm font-semibold text-primary">Sarah M.</div>
+                                            <div class="rating-stars text-xs">⭐⭐⭐⭐⭐</div>
+                                        </div>
+                                        <p class="text-xs text-text-secondary">"Absolutely incredible! Saw the river crossing three times. Our guide was exceptional."</p>
+                                    </div>
+                                    <div class="bg-white p-3 rounded-lg border-l-4 border-secondary">
+                                        <div class="flex justify-between items-start mb-2">
+                                            <div class="text-sm font-semibold text-primary">David K.</div>
+                                            <div class="rating-stars text-xs">⭐⭐⭐⭐⭐</div>
+                                        </div>
+                                        <p class="text-xs text-text-secondary">"Best safari experience ever! The Maasai village visit was authentic and respectful."</p>
+                                    </div>
+                                </div>
+                                <button class="text-secondary text-sm font-semibold mt-3 hover:text-secondary-700">View all 1,247 reviews →</button>
+                            </div>
+
+                            <!-- Action Buttons -->
+                            <div class="flex gap-4">
+                                <button class="btn-primary flex-1">Book Now</button>
+                                <a href="tour_packages.html" class="btn-secondary px-6 text-center">Explore More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Diani Beach -->
+                <div class="destination-item beach" id="diani-beach" data-destination="diani-beach">
+                    <div class="destination-card">
+                        <div class="relative overflow-hidden rounded-t-2xl">
+                            <div class="image-gallery" data-images="[&quot;https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&quot;, &quot;https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&quot;, &quot;https://images.unsplash.com/photo-1544551763-77ef2d0cfc6c?q=80&w=2126&auto=format&fit=crop&ixlib=rb-4.0.3&quot;]">
+                                <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Diani Beach white sand" class="w-full h-64 object-cover gallery-image active" />
+                                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Crystal clear waters" class="w-full h-64 object-cover gallery-image" />
+                                <img src="https://images.unsplash.com/photo-1544551763-77ef2d0cfc6c?q=80&w=2126&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Beach activities" class="w-full h-64 object-cover gallery-image" />
+                            </div>
+                            <div class="absolute top-4 right-4">
+                                <div class="tour-badge bg-secondary">Tropical Paradise</div>
+                            </div>
+                            <div class="absolute bottom-4 left-4">
+                                <div class="rating-stars">
+                                    <span class="text-lg">⭐⭐⭐⭐⭐</span>
+                                    <span class="text-white text-sm ml-2">(892 reviews)</span>
+                                </div>
+                            </div>
+                            <div class="absolute inset-x-4 bottom-16 flex justify-center space-x-2">
+                                <button class="gallery-dot active" data-slide="0"></button>
+                                <button class="gallery-dot" data-slide="1"></button>
+                                <button class="gallery-dot" data-slide="2"></button>
+                            </div>
+                        </div>
+
+                        <div class="p-8">
+                            <h3 class="text-2xl font-headline font-bold text-primary mb-4">Diani Beach</h3>
+                            
+                            <div class="mb-6">
+                                <p class="text-text-secondary leading-relaxed mb-4">
+                                    Consistently rated among Africa's best beaches, Diani offers 25 kilometers of pristine white sand, crystal-clear turquoise waters, and vibrant coral reefs perfect for snorkeling and diving.
+                                </p>
+                                <div class="space-y-2">
+                                    <h4 class="font-semibold text-primary">Trip Highlights:</h4>
+                                    <ul class="text-sm text-text-secondary space-y-1">
+                                        <li class="flex items-center"><span class="text-accent mr-2">✓</span>World-class snorkeling & diving</li>
+                                        <li class="flex items-center"><span class="text-accent mr-2">✓</span>Dhow sunset cruises</li>
+                                        <li class="flex items-center"><span class="text-accent mr-2">✓</span>Swahili cultural experiences</li>
+                                        <li class="flex items-center"><span class="text-accent mr-2">✓</span>Colobus monkey sanctuary</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="bg-secondary-50 rounded-lg p-4 mb-6">
+                                <h4 class="font-semibold text-primary mb-2">Best Visiting Season</h4>
+                                <p class="text-sm text-text-secondary">October to March for dry weather, June to September for cooler temperatures and excellent diving conditions.</p>
+                            </div>
+
+                            <div class="border-t border-border pt-6 mb-6">
+                                <h4 class="font-semibold text-primary mb-4">Package Options</h4>
+                                <div class="grid md:grid-cols-2 gap-4">
+                                    <div class="bg-white p-4 rounded-lg border border-border">
+                                        <div class="flex justify-between items-start mb-2">
+                                            <div class="font-semibold text-primary">Beach Resort</div>
+                                            <div class="text-lg font-bold text-primary">$199/day</div>
+                                        </div>
+                                        <p class="text-xs text-text-secondary">3-star beachfront, half board</p>
+                                    </div>
+                                    <div class="bg-white p-4 rounded-lg border border-border">
+                                        <div class="flex justify-between items-start mb-2">
+                                            <div class="font-semibold text-primary">Luxury Beach</div>
+                                            <div class="text-lg font-bold text-primary">$599/day</div>
+                                        </div>
+                                        <p class="text-xs text-text-secondary">5-star resort, all inclusive</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="border-t border-border pt-6 mb-6">
+                                <h4 class="font-semibold text-primary mb-4">Recent Reviews</h4>
+                                <div class="space-y-3">
+                                    <div class="bg-white p-3 rounded-lg border-l-4 border-accent">
+                                        <div class="flex justify-between items-start mb-2">
+                                            <div class="text-sm font-semibold text-primary">Lisa R.</div>
+                                            <div class="rating-stars text-xs">⭐⭐⭐⭐⭐</div>
+                                        </div>
+                                        <p class="text-xs text-text-secondary">"Perfect honeymoon destination! The beach is breathtaking and staff incredibly welcoming."</p>
+                                    </div>
+                                    <div class="bg-white p-3 rounded-lg border-l-4 border-secondary">
+                                        <div class="flex justify-between items-start mb-2">
+                                            <div class="text-sm font-semibold text-primary">Tom W.</div>
+                                            <div class="rating-stars text-xs">⭐⭐⭐⭐⭐</div>
+                                        </div>
+                                        <p class="text-xs text-text-secondary">"Amazing snorkeling! Saw dolphins and sea turtles. The dhow cruise was magical."</p>
+                                    </div>
+                                </div>
+                                <button class="text-secondary text-sm font-semibold mt-3 hover:text-secondary-700">View all 892 reviews →</button>
+                            </div>
+
+                            <div class="flex gap-4">
+                                <button class="btn-primary flex-1">Book Now</button>
+                                <a href="tour_packages.html" class="btn-secondary px-6 text-center">Explore More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mount Kenya -->
+                <div class="destination-item mountain" id="mount-kenya" data-destination="mount-kenya">
+                    <div class="destination-card">
+                        <div class="relative overflow-hidden rounded-t-2xl">
+                            <div class="image-gallery" data-images="[&quot;https://images.unsplash.com/photo-1605540436563-5bca919ae766?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&quot;, &quot;https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&quot;, &quot;https://images.unsplash.com/photo-1551632811-561732d1e306?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&quot;]">
+                                <img src="https://images.unsplash.com/photo-1605540436563-5bca919ae766?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Mount Kenya peaks" class="w-full h-64 object-cover gallery-image active" />
+                                <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Alpine landscape" class="w-full h-64 object-cover gallery-image" />
+                                <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Mountain wildlife" class="w-full h-64 object-cover gallery-image" />
+                            </div>
+                            <div class="absolute top-4 right-4">
+                                <div class="tour-badge bg-primary">Adventure</div>
+                            </div>
+                            <div class="absolute bottom-4 left-4">
+                                <div class="rating-stars">
+                                    <span class="text-lg">⭐⭐⭐⭐⭐</span>
+                                    <span class="text-white text-sm ml-2">(456 reviews)</span>
+                                </div>
+                            </div>
+                            <div class="absolute inset-x-4 bottom-16 flex justify-center space-x-2">
+                                <button class="gallery-dot active" data-slide="0"></button>
+                                <button class="gallery-dot" data-slide="1"></button>
+                                <button class="gallery-dot" data-slide="2"></button>
+                            </div>
+                        </div>
+
+                        <div class="p-8">
+                            <h3 class="text-2xl font-headline font-bold text-primary mb-4">Mount Kenya</h3>
+                            
+                            <div class="mb-6">
+                                <p class="text-text-secondary leading-relaxed mb-4">
+                                    Africa's second-highest mountain offers diverse ecosystems from tropical rainforest to alpine desert. The journey to Point Lenana (4,985m) passes through breathtaking landscapes and unique wildlife.
+                                </p>
+                                <div class="space-y-2">
+                                    <h4 class="font-semibold text-primary">Trip Highlights:</h4>
+                                    <ul class="text-sm text-text-secondary space-y-1">
+                                        <li class="flex items-center"><span class="text-accent mr-2">✓</span>Point Lenana summit (4,985m)</li>
+                                        <li class="flex items-center"><span class="text-accent mr-2">✓</span>Diverse ecosystems</li>
+                                        <li class="flex items-center"><span class="text-accent mr-2">✓</span>Unique alpine wildlife</li>
+                                        <li class="flex items-center"><span class="text-accent mr-2">✓</span>Spectacular glacial valleys</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="bg-primary-50 rounded-lg p-4 mb-6">
+                                <h4 class="font-semibold text-primary mb-2">Best Visiting Season</h4>
+                                <p class="text-sm text-text-secondary">January-March and July-October for clear weather and best summit conditions.</p>
+                            </div>
+
+                            <div class="border-t border-border pt-6 mb-6">
+                                <h4 class="font-semibold text-primary mb-4">Package Options</h4>
+                                <div class="grid md:grid-cols-2 gap-4">
+                                    <div class="bg-white p-4 rounded-lg border border-border">
+                                        <div class="flex justify-between items-start mb-2">
+                                            <div class="font-semibold text-primary">5-Day Trek</div>
+                                            <div class="text-lg font-bold text-primary">$899/person</div>
+                                        </div>
+                                        <p class="text-xs text-text-secondary">Sirimon-Chogoria route</p>
+                                    </div>
+                                    <div class="bg-white p-4 rounded-lg border border-border">
+                                        <div class="flex justify-between items-start mb-2">
+                                            <div class="font-semibold text-primary">7-Day Expedition</div>
+                                            <div class="text-lg font-bold text-primary">$1,599/person</div>
+                                        </div>
+                                        <p class="text-xs text-text-secondary">Technical climbing Batian</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="border-t border-border pt-6 mb-6">
+                                <h4 class="font-semibold text-primary mb-4">Recent Reviews</h4>
+                                <div class="space-y-3">
+                                    <div class="bg-white p-3 rounded-lg border-l-4 border-accent">
+                                        <div class="flex justify-between items-start mb-2">
+                                            <div class="text-sm font-semibold text-primary">Mark T.</div>
+                                            <div class="rating-stars text-xs">⭐⭐⭐⭐⭐</div>
+                                        </div>
+                                        <p class="text-xs text-text-secondary">"Challenging but incredibly rewarding. The sunrise from Point Lenana was unforgettable."</p>
+                                    </div>
+                                    <div class="bg-white p-3 rounded-lg border-l-4 border-secondary">
+                                        <div class="flex justify-between items-start mb-2">
+                                            <div class="text-sm font-semibold text-primary">Anna P.</div>
+                                            <div class="rating-stars text-xs">⭐⭐⭐⭐⭐</div>
+                                        </div>
+                                        <p class="text-xs text-text-secondary">"Professional guides, excellent safety standards. The diverse landscapes are amazing!"</p>
+                                    </div>
+                                </div>
+                                <button class="text-secondary text-sm font-semibold mt-3 hover:text-secondary-700">View all 456 reviews →</button>
+                            </div>
+
+                            <div class="flex gap-4">
+                                <button class="btn-primary flex-1">Book Now</button>
+                                <a href="tour_packages.html" class="btn-secondary px-6 text-center">Explore More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Amboseli -->
+                <div class="destination-item safari" id="amboseli" data-destination="amboseli">
+                    <div class="destination-card">
+                        <div class="relative overflow-hidden rounded-t-2xl">
+                            <div class="image-gallery" data-images="[&quot;https://images.unsplash.com/photo-1518709268805-4e9042af2176?q=80&w=2125&auto=format&fit=crop&ixlib=rb-4.0.3&quot;, &quot;https://images.unsplash.com/photo-1564760055775-d63b17a55c44?q=80&w=2016&auto=format&fit=crop&ixlib=rb-4.0.3&quot;, &quot;https://images.unsplash.com/photo-1523805009345-7448845a9e53?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&quot;]">
+                                <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?q=80&w=2125&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Amboseli elephants with Kilimanjaro" class="w-full h-64 object-cover gallery-image active" />
+                                <img src="https://images.unsplash.com/photo-1564760055775-d63b17a55c44?q=80&w=2016&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Mount Kilimanjaro view" class="w-full h-64 object-cover gallery-image" />
+                                <img src="https://images.unsplash.com/photo-1523805009345-7448845a9e53?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Amboseli wildlife" class="w-full h-64 object-cover gallery-image" />
+                            </div>
+                            <div class="absolute top-4 right-4">
+                                <div class="tour-badge">Elephant Paradise</div>
+                            </div>
+                            <div class="absolute bottom-4 left-4">
+                                <div class="rating-stars">
+                                    <span class="text-lg">⭐⭐⭐⭐⭐</span>
+                                    <span class="text-white text-sm ml-2">(678 reviews)</span>
+                                </div>
+                            </div>
+                            <div class="absolute inset-x-4 bottom-16 flex justify-center space-x-2">
+                                <button class="gallery-dot active" data-slide="0"></button>
+                                <button class="gallery-dot" data-slide="1"></button>
+                                <button class="gallery-dot" data-slide="2"></button>
+                            </div>
+                        </div>
+
+                        <div class="p-8">
+                            <h3 class="text-2xl font-headline font-bold text-primary mb-4">Amboseli National Park</h3>
+                            
+                            <div class="mb-6">
+                                <p class="text-text-secondary leading-relaxed mb-4">
+                                    Famous for its large elephant herds and stunning views of Mount Kilimanjaro, Amboseli offers some of Africa's most iconic safari photography opportunities against the backdrop of Africa's highest peak.
+                                </p>
+                                <div class="space-y-2">
+                                    <h4 class="font-semibold text-primary">Trip Highlights:</h4>
+                                    <ul class="text-sm text-text-secondary space-y-1">
+                                        <li class="flex items-center"><span class="text-accent mr-2">✓</span>Large elephant herds</li>
+                                        <li class="flex items-center"><span class="text-accent mr-2">✓</span>Mount Kilimanjaro views</li>
+                                        <li class="flex items-center"><span class="text-accent mr-2">✓</span>Maasai cultural visits</li>
+                                        <li class="flex items-center"><span class="text-accent mr-2">✓</span>Diverse birdlife (400+ species)</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="bg-accent-50 rounded-lg p-4 mb-6">
+                                <h4 class="font-semibold text-primary mb-2">Best Visiting Season</h4>
+                                <p class="text-sm text-text-secondary">June to October and January to March for clear Kilimanjaro views and excellent game viewing.</p>
+                            </div>
+
+                            <div class="border-t border-border pt-6 mb-6">
+                                <h4 class="font-semibold text-primary mb-4">Package Options</h4>
+                                <div class="grid md:grid-cols-2 gap-4">
+                                    <div class="bg-white p-4 rounded-lg border border-border">
+                                        <div class="flex justify-between items-start mb-2">
+                                            <div class="font-semibold text-primary">Day Safari</div>
+                                            <div class="text-lg font-bold text-primary">$249/person</div>
+                                        </div>
+                                        <p class="text-xs text-text-secondary">Full day game drive</p>
+                                    </div>
+                                    <div class="bg-white p-4 rounded-lg border border-border">
+                                        <div class="flex justify-between items-start mb-2">
+                                            <div class="font-semibold text-primary">3-Day Safari</div>
+                                            <div class="text-lg font-bold text-primary">$899/person</div>
+                                        </div>
+                                        <p class="text-xs text-text-secondary">Lodge accommodation</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="border-t border-border pt-6 mb-6">
+                                <h4 class="font-semibold text-primary mb-4">Recent Reviews</h4>
+                                <div class="space-y-3">
+                                    <div class="bg-white p-3 rounded-lg border-l-4 border-accent">
+                                        <div class="flex justify-between items-start mb-2">
+                                            <div class="text-sm font-semibold text-primary">Jane D.</div>
+                                            <div class="rating-stars text-xs">⭐⭐⭐⭐⭐</div>
+                                        </div>
+                                        <p class="text-xs text-text-secondary">"The elephants are magnificent! Crystal clear views of Kilimanjaro made it perfect."</p>
+                                    </div>
+                                </div>
+                                <button class="text-secondary text-sm font-semibold mt-3 hover:text-secondary-700">View all 678 reviews →</button>
+                            </div>
+
+                            <div class="flex gap-4">
+                                <button class="btn-primary flex-1">Book Now</button>
+                                <a href="tour_packages.html" class="btn-secondary px-6 text-center">Explore More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lake Nakuru -->
+                <div class="destination-item lake" id="lake-nakuru" data-destination="lake-nakuru">
+                    <div class="destination-card">
+                        <div class="relative overflow-hidden rounded-t-2xl">
+                            <div class="image-gallery" data-images="[&quot;https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&quot;, &quot;https://images.unsplash.com/photo-1571115764595-644a1f56a55c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&quot;, &quot;https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&quot;]">
+                                <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Lake Nakuru flamingos" class="w-full h-64 object-cover gallery-image active" />
+                                <img src="https://images.unsplash.com/photo-1571115764595-644a1f56a55c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Rhino sanctuary" class="w-full h-64 object-cover gallery-image" />
+                                <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Baboon cliffs" class="w-full h-64 object-cover gallery-image" />
+                            </div>
+                            <div class="absolute top-4 right-4">
+                                <div class="tour-badge bg-secondary">Pink Paradise</div>
+                            </div>
+                            <div class="absolute bottom-4 left-4">
+                                <div class="rating-stars">
+                                    <span class="text-lg">⭐⭐⭐⭐⭐</span>
+                                    <span class="text-white text-sm ml-2">(543 reviews)</span>
+                                </div>
+                            </div>
+                            <div class="absolute inset-x-4 bottom-16 flex justify-center space-x-2">
+                                <button class="gallery-dot active" data-slide="0"></button>
+                                <button class="gallery-dot" data-slide="1"></button>
+                                <button class="gallery-dot" data-slide="2"></button>
+                            </div>
+                        </div>
+
+                        <div class="p-8">
+                            <h3 class="text-2xl font-headline font-bold text-primary mb-4">Lake Nakuru National Park</h3>
+                            
+                            <div class="mb-6">
+                                <p class="text-text-secondary leading-relaxed mb-4">
+                                    A birdwatcher's paradise famous for its massive flocks of flamingos that turn the lake pink. This compact park is also a rhino sanctuary and offers excellent wildlife viewing in a stunning setting.
+                                </p>
+                                <div class="space-y-2">
+                                    <h4 class="font-semibold text-primary">Trip Highlights:</h4>
+                                    <ul class="text-sm text-text-secondary space-y-1">
+                                        <li class="flex items-center"><span class="text-accent mr-2">✓</span>Flamingo spectacle</li>
+                                        <li class="flex items-center"><span class="text-accent mr-2">✓</span>Rhino sanctuary</li>
+                                        <li class="flex items-center"><span class="text-accent mr-2">✓</span>Over 450 bird species</li>
+                                        <li class="flex items-center"><span class="text-accent mr-2">✓</span>Spectacular viewpoints</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="bg-secondary-50 rounded-lg p-4 mb-6">
+                                <h4 class="font-semibold text-primary mb-2">Best Visiting Season</h4>
+                                <p class="text-sm text-text-secondary">Year-round destination, but July to January offers the best flamingo viewing and weather conditions.</p>
+                            </div>
+
+                            <div class="border-t border-border pt-6 mb-6">
+                                <h4 class="font-semibold text-primary mb-4">Package Options</h4>
+                                <div class="grid md:grid-cols-2 gap-4">
+                                    <div class="bg-white p-4 rounded-lg border border-border">
+                                        <div class="flex justify-between items-start mb-2">
+                                            <div class="font-semibold text-primary">Day Trip</div>
+                                            <div class="text-lg font-bold text-primary">$199/person</div>
+                                        </div>
+                                        <p class="text-xs text-text-secondary">From Nairobi, full day</p>
+                                    </div>
+                                    <div class="bg-white p-4 rounded-lg border border-border">
+                                        <div class="flex justify-between items-start mb-2">
+                                            <div class="font-semibold text-primary">2-Day Safari</div>
+                                            <div class="text-lg font-bold text-primary">$599/person</div>
+                                        </div>
+                                        <p class="text-xs text-text-secondary">Lodge stay included</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="border-t border-border pt-6 mb-6">
+                                <h4 class="font-semibold text-primary mb-4">Recent Reviews</h4>
+                                <div class="space-y-3">
+                                    <div class="bg-white p-3 rounded-lg border-l-4 border-accent">
+                                        <div class="flex justify-between items-start mb-2">
+                                            <div class="text-sm font-semibold text-primary">Robert H.</div>
+                                            <div class="rating-stars text-xs">⭐⭐⭐⭐⭐</div>
+                                        </div>
+                                        <p class="text-xs text-text-secondary">"Incredible flamingo viewing! Saw both black and white rhinos. Perfect day trip from Nairobi."</p>
+                                    </div>
+                                </div>
+                                <button class="text-secondary text-sm font-semibold mt-3 hover:text-secondary-700">View all 543 reviews →</button>
+                            </div>
+
+                            <div class="flex gap-4">
+                                <button class="btn-primary flex-1">Book Now</button>
+                                <a href="tour_packages.html" class="btn-secondary px-6 text-center">Explore More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Destinations Section -->
+    <section class="section-padding bg-white">
+        <div class="container-custom">
+            <div class="text-center mb-16">
+                <h2 class="section-title text-primary mb-4">More Amazing Destinations</h2>
+                <p class="text-xl text-text-secondary">Discover hidden gems and lesser-known treasures across Kenya</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Samburu -->
+                <div class="destination-item cultural" id="samburu" data-destination="samburu">
+                    <div class="destination-card">
+                        <div class="relative overflow-hidden rounded-t-2xl">
+                            <img src="https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Samburu Cultural Experience" class="w-full h-48 object-cover" />
+                            <div class="absolute top-4 right-4">
+                                <div class="tour-badge bg-accent">Cultural</div>
+                            </div>
+                            <div class="absolute bottom-4 left-4">
+                                <div class="rating-stars">
+                                    <span class="text-lg">⭐⭐⭐⭐⭐</span>
+                                    <span class="text-white text-sm ml-2">(234 reviews)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-headline font-bold text-primary mb-3">Samburu National Reserve</h3>
+                            <p class="text-text-secondary mb-4">Experience authentic Samburu culture and unique wildlife including the Samburu Special Five: Grevy's zebra, reticulated giraffe, Somali ostrich, gerenuk, and beisa oryx.</p>
+                            <div class="flex gap-4">
+                                <button class="btn-primary flex-1">Book Now</button>
+                                <a href="tour_packages.html" class="btn-secondary px-4 text-center">Explore More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tsavo -->
+                <div class="destination-item safari" id="tsavo" data-destination="tsavo">
+                    <div class="destination-card">
+                        <div class="relative overflow-hidden rounded-t-2xl">
+                            <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Tsavo Wilderness" class="w-full h-48 object-cover" />
+                            <div class="absolute top-4 right-4">
+                                <div class="tour-badge">Wilderness</div>
+                            </div>
+                            <div class="absolute bottom-4 left-4">
+                                <div class="rating-stars">
+                                    <span class="text-lg">⭐⭐⭐⭐⭐</span>
+                                    <span class="text-white text-sm ml-2">(189 reviews)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-headline font-bold text-primary mb-3">Tsavo National Park</h3>
+                            <p class="text-text-secondary mb-4">Kenya's largest park featuring red elephants, dramatic landscapes, and the legendary man-eating lions of Tsavo. Perfect for adventurous travelers seeking authentic wilderness.</p>
+                            <div class="flex gap-4">
+                                <button class="btn-primary flex-1">Book Now</button>
+                                <a href="tour_packages.html" class="btn-secondary px-4 text-center">Explore More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lamu -->
+                <div class="destination-item cultural" id="lamu" data-destination="lamu">
+                    <div class="destination-card">
+                        <div class="relative overflow-hidden rounded-t-2xl">
+                            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Lamu Island" class="w-full h-48 object-cover" />
+                            <div class="absolute top-4 right-4">
+                                <div class="tour-badge bg-secondary">Island</div>
+                            </div>
+                            <div class="absolute bottom-4 left-4">
+                                <div class="rating-stars">
+                                    <span class="text-lg">⭐⭐⭐⭐⭐</span>
+                                    <span class="text-white text-sm ml-2">(156 reviews)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-headline font-bold text-primary mb-3">Lamu Island</h3>
+                            <p class="text-text-secondary mb-4">Step back in time on this UNESCO World Heritage site. Experience Swahili culture, historic architecture, dhow sailing, and pristine beaches away from modern life.</p>
+                            <div class="flex gap-4">
+                                <button class="btn-primary flex-1">Book Now</button>
+                                <a href="tour_packages.html" class="btn-secondary px-4 text-center">Explore More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nairobi -->
+                <div class="destination-item cultural" id="nairobi" data-destination="nairobi">
+                    <div class="destination-card">
+                        <div class="relative overflow-hidden rounded-t-2xl">
+                            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Nairobi City" class="w-full h-48 object-cover" />
+                            <div class="absolute top-4 right-4">
+                                <div class="tour-badge bg-primary">City</div>
+                            </div>
+                            <div class="absolute bottom-4 left-4">
+                                <div class="rating-stars">
+                                    <span class="text-lg">⭐⭐⭐⭐⭐</span>
+                                    <span class="text-white text-sm ml-2">(298 reviews)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-headline font-bold text-primary mb-3">Nairobi City</h3>
+                            <p class="text-text-secondary mb-4">Discover Kenya's vibrant capital with visits to the Giraffe Centre, Karen Blixen Museum, local markets, and the unique Nairobi National Park within city limits.</p>
+                            <div class="flex gap-4">
+                                <button class="btn-primary flex-1">Book Now</button>
+                                <a href="tour_packages.html" class="btn-secondary px-4 text-center">Explore More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lake Naivasha -->
+                <div class="destination-item lake" id="lake-naivasha" data-destination="lake-naivasha">
+                    <div class="destination-card">
+                        <div class="relative overflow-hidden rounded-t-2xl">
+                            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Lake Naivasha" class="w-full h-48 object-cover" />
+                            <div class="absolute top-4 right-4">
+                                <div class="tour-badge bg-secondary">Lake</div>
+                            </div>
+                            <div class="absolute bottom-4 left-4">
+                                <div class="rating-stars">
+                                    <span class="text-lg">⭐⭐⭐⭐⭐</span>
+                                    <span class="text-white text-sm ml-2">(167 reviews)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-headline font-bold text-primary mb-3">Lake Naivasha</h3>
+                            <p class="text-text-secondary mb-4">A freshwater lake surrounded by flower farms and wildlife. Enjoy boat rides, bird watching, and visits to Hell's Gate National Park for cycling and hiking adventures.</p>
+                            <div class="flex gap-4">
+                                <button class="btn-primary flex-1">Book Now</button>
+                                <a href="tour_packages.html" class="btn-secondary px-4 text-center">Explore More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Meru National Park -->
+                <div class="destination-item safari" id="meru" data-destination="meru">
+                    <div class="destination-card">
+                        <div class="relative overflow-hidden rounded-t-2xl">
+                            <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?q=80&w=2125&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Meru National Park" class="w-full h-48 object-cover" />
+                            <div class="absolute top-4 right-4">
+                                <div class="tour-badge">Hidden Gem</div>
+                            </div>
+                            <div class="absolute bottom-4 left-4">
+                                <div class="rating-stars">
+                                    <span class="text-lg">⭐⭐⭐⭐⭐</span>
+                                    <span class="text-white text-sm ml-2">(123 reviews)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-headline font-bold text-primary mb-3">Meru National Park</h3>
+                            <p class="text-text-secondary mb-4">A hidden gem with diverse landscapes from savannah to forest. Home to the Big Five and the setting for Joy Adamson's "Born Free" story about Elsa the lioness.</p>
+                            <div class="flex gap-4">
+                                <button class="btn-primary flex-1">Book Now</button>
+                                <a href="tour_packages.html" class="btn-secondary px-4 text-center">Explore More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary-900 text-white section-padding">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <div class="flex items-center space-x-3 mb-6">
+                        <svg class="w-8 h-8 text-secondary" viewBox="0 0 60 60" fill="currentColor">
+                            <path d="M30 5L50 15v30L30 55L10 45V15L30 5z"/>
+                            <circle cx="30" cy="30" r="12" fill="#f5f1e8"/>
+                            <path d="M25 25l10 5-10 5z" fill="currentColor"/>
+                        </svg>
+                        <div>
+                            <span class="text-xl font-headline font-bold">Tembea Kenya</span>
+                            <div class="text-sm text-secondary">Mwangi Tours</div>
+                        </div>
+                    </div>
+                    <p class="text-primary-200 mb-4">
+                        Discover Kenya's natural wonders through authentic, sustainable adventures.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="font-headline font-semibold mb-4">Top Destinations</h4>
+                    <ul class="space-y-2 text-primary-200">
+                        <li><a href="#maasai-mara" class="hover:text-secondary transition-fast">Maasai Mara</a></li>
+                        <li><a href="#diani-beach" class="hover:text-secondary transition-fast">Diani Beach</a></li>
+                        <li><a href="#mount-kenya" class="hover:text-secondary transition-fast">Mount Kenya</a></li>
+                        <li><a href="#amboseli" class="hover:text-secondary transition-fast">Amboseli</a></li>
+                        <li><a href="#lake-nakuru" class="hover:text-secondary transition-fast">Lake Nakuru</a></li>
+                        <li><a href="#samburu" class="hover:text-secondary transition-fast">Samburu</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-headline font-semibold mb-4">Adventure Types</h4>
+                    <ul class="space-y-2 text-primary-200">
+                        <li><a href="tour_packages.html" class="hover:text-secondary transition-fast">Safari Adventures</a></li>
+                        <li><a href="tour_packages.html" class="hover:text-secondary transition-fast">Beach Holidays</a></li>
+                        <li><a href="tour_packages.html" class="hover:text-secondary transition-fast">Mountain Trekking</a></li>
+                        <li><a href="tour_packages.html" class="hover:text-secondary transition-fast">Cultural Tours</a></li>
+                        <li><a href="tour_packages.html" class="hover:text-secondary transition-fast">City Experiences</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-headline font-semibold mb-4">Contact</h4>
+                    <div class="space-y-2 text-primary-200">
+                        <div>📍 Nairobi, Kenya</div>
+                        <div>📞 +254 700 123 456</div>
+                        <div>✉️ destinations@tembekenya.com</div>
+                        <div>🕒 24/7 Support</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-primary-700 pt-8 text-center text-primary-300">
+                <p>&copy; 2025 Tembea Kenya Tours. Explore Kenya's Natural Wonders.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Integration -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="https://wa.me/254700123456" class="bg-green-500 text-white p-4 rounded-full shadow-modal hover:bg-green-600 transition-all" target="_blank">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+            </svg>
+        </a>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-90 z-50 hidden flex items-center justify-center">
+        <div class="relative max-w-4xl mx-auto p-4">
+            <img id="lightbox-img" src alt class="max-w-full max-h-screen object-contain" />
+            <button id="close-lightbox" class="absolute top-4 right-4 text-white text-2xl hover:text-accent">&times;</button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Filter functionality
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const destinationItems = document.querySelectorAll('.destination-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Update active filter button
+                filterBtns.forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+
+                const filter = this.dataset.filter;
+
+                // Show/hide destinations based on filter
+                destinationItems.forEach(item => {
+                    if (filter === 'all' || item.classList.contains(filter)) {
+                        item.style.display = 'block';
+                        item.classList.add('animate-fade-in');
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Image Gallery functionality
+        document.querySelectorAll('.gallery-dot').forEach(dot => {
+            dot.addEventListener('click', function() {
+                const slideIndex = parseInt(this.dataset.slide);
+                const gallery = this.closest('.image-gallery');
+                const images = gallery.querySelectorAll('.gallery-image');
+                const dots = gallery.querySelectorAll('.gallery-dot');
+
+                // Update active image
+                images.forEach((img, index) => {
+                    if (index === slideIndex) {
+                        img.classList.add('active');
+                    } else {
+                        img.classList.remove('active');
+                    }
+                });
+
+                // Update active dot
+                dots.forEach((dot, index) => {
+                    if (index === slideIndex) {
+                        dot.classList.add('active');
+                    } else {
+                        dot.classList.remove('active');
+                    }
+                });
+            });
+        });
+
+        // Lightbox functionality
+        document.querySelectorAll('.gallery-image').forEach(img => {
+            img.addEventListener('click', function() {
+                document.getElementById('lightbox-img').src = this.src;
+                document.getElementById('lightbox').classList.remove('hidden');
+            });
+        });
+
+        document.getElementById('close-lightbox').addEventListener('click', function() {
+            document.getElementById('lightbox').classList.add('hidden');
+        });
+
+        // Smooth scrolling for footer destination links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Lazy loading for images
+        const imageObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    img.src = img.dataset.src || img.src;
+                    img.classList.add('animate-fade-in');
+                    imageObserver.unobserve(img);
+                }
+            });
+        });
+
+        document.querySelectorAll('img').forEach(img => {
+            imageObserver.observe(img);
+        });
+    </script>
+
+    <style>
+        .filter-btn {
+            @apply px-4 py-2 rounded-full text-sm font-semibold transition-all;
+            @apply bg-white/20 text-white border border-white/30;
+            @apply hover:bg-white/30;
+        }
+
+        .filter-btn.active {
+            @apply bg-accent text-white border-accent;
+        }
+
+        .destinations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+        }
+
+        .gallery-image {
+            @apply absolute inset-0 opacity-0 transition-opacity duration-500;
+        }
+
+        .gallery-image.active {
+            @apply opacity-100;
+        }
+
+        .gallery-dot {
+            @apply w-3 h-3 rounded-full bg-white/50 border-2 border-white/70 transition-all;
+        }
+
+        .gallery-dot.active {
+            @apply bg-accent border-accent;
+        }
+
+        @media (max-width: 768px) {
+            .destinations-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

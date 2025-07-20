@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tour Packages - Curated Kenya Adventures | Tembea Kenya Tours</title>
+    <meta name="description" content="Discover our curated collection of Kenya tour packages - from luxury safaris to budget camping adventures. Find your perfect Kenya experience with expert-guided tours." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fagency1754638back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-border">
+        <nav class="container-custom section-padding py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center space-x-2">
+                    <svg class="w-10 h-10 text-primary" viewBox="0 0 40 40" fill="currentColor">
+                        <path d="M20 2L35 12v16L20 38L5 28V12L20 2z"/>
+                        <path d="M15 18h10v8h-10z" fill="white"/>
+                        <circle cx="20" cy="15" r="3" fill="var(--color-accent)"/>
+                    </svg>
+                    <div>
+                        <a href="index.html"><span class="text-2xl font-headline font-bold text-primary">Tembea Kenya</span></a>
+                        <div class="text-xs text-secondary uppercase tracking-wide font-semibold">Mwangi Tours</div>
+                    </div>
+                </div>
+                <!-- Desktop Navigation -->
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="index.html" class="text-text-secondary hover:text-primary transition-fast">Home</a>
+                    <a href="destinations.html" class="text-text-secondary hover:text-primary transition-fast">Destinations</a>
+                    <a href="tour_packages.html" class="text-primary font-semibold border-b-2 border-secondary">Tour Packages</a>
+                    <a href="#book" class="text-text-secondary hover:text-primary transition-fast">Book a Trip</a>
+                    <a href="portfolio.html" class="text-text-secondary hover:text-primary transition-fast">Portfolio</a>
+                    <a href="#contact" class="text-text-secondary hover:text-primary transition-fast">Contact</a>
+                    <a href="#book" class="btn-primary">Start Planning</a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <button class="lg:hidden p-2 text-primary" id="mobile-menu-btn">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+            <!-- Mobile Navigation -->
+            <div class="lg:hidden hidden mt-4 pb-4 border-t border-border" id="mobile-menu">
+                <div class="flex flex-col space-y-4 pt-4">
+                    <a href="index.html" class="text-text-secondary">Home</a>
+                    <a href="destinations.html" class="text-text-secondary">Destinations</a>
+                    <a href="tour_packages.html" class="text-primary font-semibold">Tour Packages</a>
+                    <a href="#book" class="text-text-secondary">Book a Trip</a>
+                    <a href="portfolio.html" class="text-text-secondary">Portfolio</a>
+                    <a href="#contact" class="text-text-secondary">Contact</a>
+                    <a href="#book" class="btn-primary w-full text-center">Start Planning</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden bg-gradient-to-br from-primary via-primary-700 to-primary-900 text-white">
+        <div class="absolute inset-0 bg-black/20"></div>
+        <div class="absolute inset-0 opacity-30">
+            <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?q=80&w=2126&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Kenya safari landscape" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/631317/pexels-photo-631317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+        </div>
+        <div class="relative container-custom section-padding py-20 lg:py-32">
+            <div class="max-w-4xl mx-auto text-center animate-fade-in">
+                <h1 class="hero-title mb-6">
+                    Curated Kenya Adventures
+                    <span class="block text-secondary">Your Perfect Safari Awaits</span>
+                </h1>
+                <p class="text-xl text-gray-200 mb-8 leading-relaxed max-w-2xl mx-auto">
+                    From luxury safari lodges to budget camping under the stars. Discover handpicked experiences that showcase Kenya's incredible wildlife, culture, and landscapes.
+                </p>
+                <p class="text-lg text-white mb-8 max-w-3xl mx-auto">
+                    Whether you dream of witnessing the Great Migration, relaxing on the white sands of Diani Beach, or exploring Kenya's hidden gems, our expert team has crafted the perfect package for every traveler. Browse by category below or scroll to see all our most popular adventures!
+                </p>
+                <!-- Quick Filter Buttons as Anchor Links -->
+                <div class="flex flex-wrap gap-4 justify-center mb-12">
+                    <a href="#luxury" class="filter-btn">Luxury Safaris</a>
+                    <a href="#budget" class="filter-btn">Budget Adventures</a>
+                    <a href="#family" class="filter-btn">Family Friendly</a>
+                    <a href="#honeymoon" class="filter-btn">Honeymoon</a>
+                    <a href="#solo" class="filter-btn">Solo Travelers</a>
+                    <a href="#coastal" class="filter-btn">Safari & Beach</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Luxury Safaris Section -->
+    <section class="section-padding" id="luxury">
+        <div class="container-custom">
+            <h2 class="section-title text-primary mb-6">Luxury Safaris</h2>
+            <p class="text-text-secondary mb-8 max-w-2xl">Experience Kenya in style with our premium luxury safari packages. Enjoy world-class lodges, gourmet cuisine, and exclusive wildlife encounters in the heart of Africa's most iconic parks.</p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Maasai Mara Luxury -->
+                <div class="package-card destination-card group">
+                    <div class="relative overflow-hidden rounded-t-2xl">
+                        <img src="https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Luxury safari lodge in Maasai Mara" class="w-full h-64 object-cover group-hover:scale-110 transition-all duration-500" loading="lazy" />
+                        <div class="absolute top-4 left-4"><span class="tour-badge">Luxury Safari</span></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-headline font-bold text-primary mb-2">Ultimate Maasai Mara Luxury Experience</h3>
+                        <p class="text-text-secondary mb-4 text-sm">Experience the Great Migration in absolute luxury at premium tented camps with world-class service, guided by expert naturalists.</p>
+                        <div class="grid grid-cols-3 gap-4 mb-4 text-center text-sm">
+                            <div><div class="text-primary font-semibold">7 Days</div><div class="text-text-secondary">Duration</div></div>
+                            <div><div class="text-primary font-semibold">2-6 People</div><div class="text-text-secondary">Group Size</div></div>
+                            <div><div class="text-primary font-semibold">★★★★</div><div class="text-text-secondary">Difficulty</div></div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="text-sm font-semibold text-primary mb-2">Includes:</div>
+                            <ul class="text-xs text-text-secondary space-y-1">
+                                <li class="flex items-center"><span class="text-success mr-2">✓</span>Luxury tented accommodation</li>
+                                <li class="flex items-center"><span class="text-success mr-2">✓</span>All meals & premium beverages</li>
+                                <li class="flex items-center"><span class="text-success mr-2">✓</span>Game drives with expert guides</li>
+                                <li class="flex items-center"><span class="text-success mr-2">✓</span>Airport transfers & domestic flights</li>
+                            </ul>
+                        </div>
+                        <div class="flex items-center justify-between pt-4 border-t border-border">
+                            <div><div class="text-2xl font-bold text-accent">$750</div><div class="text-xs text-text-secondary">per person/day</div></div>
+                            <button class="btn-primary text-sm px-4 py-2 package-details-btn" data-package="luxury-mara">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Amboseli Luxury -->
+                <div class="package-card destination-card group">
+                    <div class="relative overflow-hidden rounded-t-2xl">
+                        <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Amboseli luxury lodge" class="w-full h-64 object-cover group-hover:scale-110 transition-all duration-500" loading="lazy" />
+                        <div class="absolute top-4 left-4"><span class="tour-badge">Luxury Safari</span></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-headline font-bold text-primary mb-2">Amboseli Luxury Elephant Safari</h3>
+                        <p class="text-text-secondary mb-4 text-sm">Stay at a 5-star lodge with Kilimanjaro views, private game drives, and gourmet bush dinners. Perfect for wildlife lovers and photographers.</p>
+                        <div class="grid grid-cols-3 gap-4 mb-4 text-center text-sm">
+                            <div><div class="text-primary font-semibold">5 Days</div><div class="text-text-secondary">Duration</div></div>
+                            <div><div class="text-primary font-semibold">2-4 People</div><div class="text-text-secondary">Group Size</div></div>
+                            <div><div class="text-primary font-semibold">★★★☆</div><div class="text-text-secondary">Difficulty</div></div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="text-sm font-semibold text-primary mb-2">Includes:</div>
+                            <ul class="text-xs text-text-secondary space-y-1">
+                                <li class="flex items-center"><span class="text-success mr-2">✓</span>5-star lodge accommodation</li>
+                                <li class="flex items-center"><span class="text-success mr-2">✓</span>Private vehicle & guide</li>
+                                <li class="flex items-center"><span class="text-success mr-2">✓</span>All park fees & meals</li>
+                                <li class="flex items-center"><span class="text-success mr-2">✓</span>Sundowner experiences</li>
+                            </ul>
+                        </div>
+                        <div class="flex items-center justify-between pt-4 border-t border-border">
+                            <div><div class="text-2xl font-bold text-accent">$690</div><div class="text-xs text-text-secondary">per person/day</div></div>
+                            <button class="btn-primary text-sm px-4 py-2 package-details-btn" data-package="luxury-amboseli">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Samburu Luxury -->
+                <div class="package-card destination-card group">
+                    <div class="relative overflow-hidden rounded-t-2xl">
+                        <img src="https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Samburu luxury camp" class="w-full h-64 object-cover group-hover:scale-110 transition-all duration-500" loading="lazy" />
+                        <div class="absolute top-4 left-4"><span class="tour-badge">Luxury Safari</span></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-headline font-bold text-primary mb-2">Samburu Wild Luxury Retreat</h3>
+                        <p class="text-text-secondary mb-4 text-sm">Enjoy exclusive tented camps, guided walks, and cultural visits in the heart of Samburu. Spot rare wildlife and unwind in style.</p>
+                        <div class="grid grid-cols-3 gap-4 mb-4 text-center text-sm">
+                            <div><div class="text-primary font-semibold">6 Days</div><div class="text-text-secondary">Duration</div></div>
+                            <div><div class="text-primary font-semibold">2-6 People</div><div class="text-text-secondary">Group Size</div></div>
+                            <div><div class="text-primary font-semibold">★★★☆</div><div class="text-text-secondary">Difficulty</div></div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="text-sm font-semibold text-primary mb-2">Includes:</div>
+                            <ul class="text-xs text-text-secondary space-y-1">
+                                <li class="flex items-center"><span class="text-success mr-2">✓</span>Luxury tented camp</li>
+                                <li class="flex items-center"><span class="text-success mr-2">✓</span>Guided bush walks</li>
+                                <li class="flex items-center"><span class="text-success mr-2">✓</span>Cultural village visit</li>
+                                <li class="flex items-center"><span class="text-success mr-2">✓</span>All meals & drinks</li>
+                            </ul>
+                        </div>
+                        <div class="flex items-center justify-between pt-4 border-t border-border">
+                            <div><div class="text-2xl font-bold text-accent">$720</div><div class="text-xs text-text-secondary">per person/day</div></div>
+                            <button class="btn-primary text-sm px-4 py-2 package-details-btn" data-package="luxury-samburu">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Diani Beach Luxury -->
+                <div class="package-card destination-card group">
+                    <div class="relative overflow-hidden rounded-t-2xl">
+                        <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Diani Beach luxury resort" class="w-full h-64 object-cover group-hover:scale-110 transition-all duration-500" loading="lazy" />
+                        <div class="absolute top-4 left-4"><span class="tour-badge">Luxury Beach</span></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-headline font-bold text-primary mb-2">Diani Beachfront Indulgence</h3>
+                        <p class="text-text-secondary mb-4 text-sm">Relax at a 5-star Indian Ocean resort with spa, private beach, and gourmet dining. Includes a day trip to Wasini Island for snorkeling.</p>
+                        <div class="grid grid-cols-3 gap-4 mb-4 text-center text-sm">
+                            <div><div class="text-primary font-semibold">5 Days</div><div class="text-text-secondary">Duration</div></div>
+                            <div><div class="text-primary font-semibold">2-4 People</div><div class="text-text-secondary">Group Size</div></div>
+                            <div><div class="text-primary font-semibold">★★☆☆</div><div class="text-text-secondary">Difficulty</div></div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="text-sm font-semibold text-primary mb-2">Includes:</div>
+                            <ul class="text-xs text-text-secondary space-y-1">
+                                <li class="flex items-center"><span class="text-success mr-2">✓</span>5-star beachfront resort</li>
+                                <li class="flex items-center"><span class="text-success mr-2">✓</span>Spa & wellness package</li>
+                                <li class="flex items-center"><span class="text-success mr-2">✓</span>Private beach access</li>
+                                <li class="flex items-center"><span class="text-success mr-2">✓</span>Snorkeling excursion</li>
+                            </ul>
+                        </div>
+                        <div class="flex items-center justify-between pt-4 border-t border-border">
+                            <div><div class="text-2xl font-bold text-accent">$800</div><div class="text-xs text-text-secondary">per person/day</div></div>
+                            <button class="btn-primary text-sm px-4 py-2 package-details-btn" data-package="luxury-diani">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Budget Adventures Section -->
+    <section class="section-padding bg-surface" id="budget">
+        <div class="container-custom">
+            <h2 class="section-title text-primary mb-6">Budget Adventures</h2>
+            <p class="text-text-secondary mb-8 max-w-2xl">Affordable, authentic, and unforgettable. Our budget packages are perfect for travelers who want to experience the magic of Kenya without breaking the bank.</p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Amboseli Camping -->
+                <div class="package-card destination-card group">
+                    <div class="relative overflow-hidden rounded-t-2xl">
+                        <img src="https://images.unsplash.com/photo-1539650116574-75c0c6d73a0e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Camping under stars in Amboseli" class="w-full h-64 object-cover group-hover:scale-110 transition-all duration-500" loading="lazy" />
+                        <div class="absolute top-4 left-4"><span class="tour-badge bg-primary">Budget Adventure</span></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-headline font-bold text-primary mb-2">Amboseli Camping Safari</h3>
+                        <p class="text-text-secondary mb-4 text-sm">Affordable adventure with stunning views of Mount Kilimanjaro. Perfect for budget-conscious travelers who don't want to compromise on experience.</p>
+                        <div class="grid grid-cols-3 gap-4 mb-4 text-center text-sm">
+                            <div><div class="text-primary font-semibold">5 Days</div><div class="text-text-secondary">Duration</div></div>
+                            <div><div class="text-primary font-semibold">8-15 People</div><div class="text-text-secondary">Group Size</div></div>
+                            <div><div class="text-primary font-semibold">★★☆</div><div class="text-text-secondary">Difficulty</div></div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="text-sm font-semibold text-primary mb-2">Includes:</div>
+                            <ul class="text-xs text-text-secondary space-y-1">
+                                <li class="flex items-center"><span class="text-success mr-2">✓</span>Camping equipment & meals</li>
+                                <li class="flex items-center"><span class="text-success mr-2">✓</span>Professional guide & driver</li>
+                                <li class="flex items-center"><span class="text-success mr-2">✓</span>Game drives & park fees</li>
+                                <li class="flex items-center"><span class="text-success mr-2">✓</span>Transport from Nairobi</li>
+                            </ul>
+                        </div>
+                        <div class="flex items-center justify-between pt-4 border-t border-border">
+                            <div><div class="text-2xl font-bold text-accent">$85</div><div class="text-xs text-text-secondary">per person/day</div></div>
+                            <button class="btn-primary text-sm px-4 py-2 package-details-btn" data-package="budget-amboseli">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Lake Nakuru Budget -->
+                <div class="package-card destination-card group">
+                    <div class="relative overflow-hidden rounded-t-2xl">
+                        <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Lake Nakuru budget safari" class="w-full h-64 object-cover group-hover:scale-110 transition-all duration-500" loading="lazy" />
+                        <div class="absolute top-4 left-4"><span class="tour-badge bg-primary">Budget Safari</span></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-headline font-bold text-primary mb-2">Lake Nakuru Flamingo Adventure</h3>
+                        <p class="text-text-secondary mb-4 text-sm">See thousands of flamingos and rhinos on a budget-friendly safari. Includes camping, park fees, and daily game drives.</p>
+                        <div class="grid grid-cols-3 gap-4 mb-4 text-center text-sm">
+                            <div><div class="text-primary font-semibold">3 Days</div><div class="text-text-secondary">Duration</div></div>
+                            <div><div class="text-primary font-semibold">6-12 People</div><div class="text-text-secondary">Group Size</div></div>
+                            <div><div class="text-primary font-semibold">★★☆</div><div class="text-text-secondary">Difficulty</div></div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="text-sm font-semibold text-primary mb-2">Includes:</div>
+                            <ul class="text-xs text-text-secondary space-y-1">
+                                <li class="flex items-center"><span class="text-success mr-2">✓</span>Camping by the lake</li>
+                                <li class="flex items-center"><span class="text-success mr-2">✓</span>Park entry & game drives</li>
+                                <li class="flex items-center"><span class="text-success mr-2">✓</span>All meals included</li>
+                                <li class="flex items-center"><span class="text-success mr-2">✓</span>Transport from Nairobi</li>
+                            </ul>
+                        </div>
+                        <div class="flex items-center justify-between pt-4 border-t border-border">
+                            <div><div class="text-2xl font-bold text-accent">$70</div><div class="text-xs text-text-secondary">per person/day</div></div>
+                            <button class="btn-primary text-sm px-4 py-2 package-details-btn" data-package="budget-nakuru">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tsavo Backpacker -->
+                <div class="package-card destination-card group">
+                    <div class="relative overflow-hidden rounded-t-2xl">
+                        <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Backpacking Tsavo" class="w-full h-64 object-cover group-hover:scale-110 transition-all duration-500" loading="lazy" />
+                        <div class="absolute top-4 left-4"><span class="tour-badge bg-primary">Backpacker</span></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-headline font-bold text-primary mb-2">Tsavo Backpacker Adventure</h3>
+                        <p class="text-text-secondary mb-4 text-sm">Explore Kenya's largest park with a group of fellow backpackers. Flexible itinerary, shared tents, and campfire stories every night.</p>
+                        <div class="grid grid-cols-3 gap-4 mb-4 text-center text-sm">
+                            <div><div class="text-primary font-semibold">7 Days</div><div class="text-text-secondary">Duration</div></div>
+                            <div><div class="text-primary font-semibold">10-18 People</div><div class="text-text-secondary">Group Size</div></div>
+                            <div><div class="text-primary font-semibold">★★★</div><div class="text-text-secondary">Difficulty</div></div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="text-sm font-semibold text-primary mb-2">Includes:</div>
+                            <ul class="text-xs text-text-secondary space-y-1">
+                                <li class="flex items-center"><span class="text-success mr-2">✓</span>Shared tents & meals</li>
+                                <li class="flex items-center"><span class="text-success mr-2">✓</span>Flexible daily activities</li>
+                                <li class="flex items-center"><span class="text-success mr-2">✓</span>Park entry & guides</li>
+                                <li class="flex items-center"><span class="text-success mr-2">✓</span>Transport from Nairobi/Mombasa</li>
+                            </ul>
+                        </div>
+                        <div class="flex items-center justify-between pt-4 border-t border-border">
+                            <div><div class="text-2xl font-bold text-accent">$60</div><div class="text-xs text-text-secondary">per person/day</div></div>
+                            <button class="btn-primary text-sm px-4 py-2 package-details-btn" data-package="budget-tsavo">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Nairobi City Explorer -->
+                <div class="package-card destination-card group">
+                    <div class="relative overflow-hidden rounded-t-2xl">
+                        <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Nairobi city budget tour" class="w-full h-64 object-cover group-hover:scale-110 transition-all duration-500" loading="lazy" />
+                        <div class="absolute top-4 left-4"><span class="tour-badge bg-primary">City Budget</span></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-headline font-bold text-primary mb-2">Nairobi City Explorer</h3>
+                        <p class="text-text-secondary mb-4 text-sm">Discover Nairobi's highlights on a shoestring: Giraffe Centre, local markets, and Nairobi National Park. Hostel stays and group activities included.</p>
+                        <div class="grid grid-cols-3 gap-4 mb-4 text-center text-sm">
+                            <div><div class="text-primary font-semibold">2 Days</div><div class="text-text-secondary">Duration</div></div>
+                            <div><div class="text-primary font-semibold">6-10 People</div><div class="text-text-secondary">Group Size</div></div>
+                            <div><div class="text-primary font-semibold">★☆☆</div><div class="text-text-secondary">Difficulty</div></div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="text-sm font-semibold text-primary mb-2">Includes:</div>
+                            <ul class="text-xs text-text-secondary space-y-1">
+                                <li class="flex items-center"><span class="text-success mr-2">✓</span>Hostel accommodation</li>
+                                <li class="flex items-center"><span class="text-success mr-2">✓</span>Entry fees & activities</li>
+                                <li class="flex items-center"><span class="text-success mr-2">✓</span>Breakfast included</li>
+                                <li class="flex items-center"><span class="text-success mr-2">✓</span>Group leader</li>
+                            </ul>
+                        </div>
+                        <div class="flex items-center justify-between pt-4 border-t border-border">
+                            <div><div class="text-2xl font-bold text-accent">$45</div><div class="text-xs text-text-secondary">per person/day</div></div>
+                            <button class="btn-primary text-sm px-4 py-2 package-details-btn" data-package="budget-nairobi">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Family Friendly Section -->
+    <section class="section-padding" id="family">
+        <div class="container-custom">
+            <h2 class="section-title text-primary mb-6">Family Friendly</h2>
+            <p class="text-text-secondary mb-8 max-w-2xl">Create lifelong memories with your loved ones. Our family packages feature kid-friendly activities, educational experiences, and safe, comfortable accommodations.</p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Lake Nakuru & Mara Family -->
+                <div class="package-card destination-card group">
+                    <div class="relative overflow-hidden rounded-t-2xl">
+                        <img src="https://images.unsplash.com/photo-1547036967-23d11aacaee0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Family safari in Lake Nakuru" class="w-full h-64 object-cover group-hover:scale-110 transition-all duration-500" loading="lazy" />
+                        <div class="absolute top-4 left-4"><span class="tour-badge bg-secondary">Family Friendly</span></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-headline font-bold text-primary mb-2">Family Discovery Safari</h3>
+                        <p class="text-text-secondary mb-4 text-sm">Kid-friendly adventure through Lake Nakuru and Maasai Mara with educational activities, cultural visits, and comfortable accommodations perfect for families.</p>
+                        <div class="grid grid-cols-3 gap-4 mb-4 text-center text-sm">
+                            <div><div class="text-primary font-semibold">6 Days</div><div class="text-text-secondary">Duration</div></div>
+                            <div><div class="text-primary font-semibold">4-8 People</div><div class="text-text-secondary">Group Size</div></div>
+                            <div><div class="text-primary font-semibold">★★☆</div><div class="text-text-secondary">Difficulty</div></div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="text-sm font-semibold text-primary mb-2">Includes:</div>
+                            <ul class="text-xs text-text-secondary space-y-1">
+                                <li class="flex items-center"><span class="text-success mr-2">✓</span>Family-friendly accommodations</li>
+                                <li class="flex items-center"><span class="text-success mr-2">✓</span>Educational game drives</li>
+                                <li class="flex items-center"><span class="text-success mr-2">✓</span>Cultural village visits</li>
+                                <li class="flex items-center"><span class="text-success mr-2">✓</span>All meals & child-friendly options</li>
+                            </ul>
+                        </div>
+                        <div class="flex items-center justify-between pt-4 border-t border-border">
+                            <div><div class="text-2xl font-bold text-accent">$320</div><div class="text-xs text-text-secondary">per person/day</div></div>
+                            <button class="btn-primary text-sm px-4 py-2 package-details-btn" data-package="family-discovery">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Diani Beach Family -->
+                <div class="package-card destination-card group">
+                    <div class="relative overflow-hidden rounded-t-2xl">
+                        <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Family at Diani Beach" class="w-full h-64 object-cover group-hover:scale-110 transition-all duration-500" loading="lazy" />
+                        <div class="absolute top-4 left-4"><span class="tour-badge bg-secondary">Family Beach</span></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-headline font-bold text-primary mb-2">Diani Beach Family Escape</h3>
+                        <p class="text-text-secondary mb-4 text-sm">Relax on the white sands of Diani with family-friendly resort activities, kids’ clubs, and safe swimming. Includes a dolphin-watching boat trip.</p>
+                        <div class="grid grid-cols-3 gap-4 mb-4 text-center text-sm">
+                            <div><div class="text-primary font-semibold">5 Days</div><div class="text-text-secondary">Duration</div></div>
+                            <div><div class="text-primary font-semibold">4-10 People</div><div class="text-text-secondary">Group Size</div></div>
+                            <div><div class="text-primary font-semibold">★☆☆</div><div class="text-text-secondary">Difficulty</div></div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="text-sm font-semibold text-primary mb-2">Includes:</div>
+                            <ul class="text-xs text-text-secondary space-y-1">
+                                <li class="flex items-center"><span class="text-success mr-2">✓</span>Beachfront family resort</li>
+                                <li class="flex items-center"><span class="text-success mr-2">✓</span>Kids’ club & activities</li>
+                                <li class="flex items-center"><span class="text-success mr-2">✓</span>Dolphin-watching tour</li>
+                                <li class="flex items-center"><span class="text-success mr-2">✓</span>All meals included</li>
+                            </ul>
+                        </div>
+                        <div class="flex items-center justify-between pt-4 border-t border-border">
+                            <div><div class="text-2xl font-bold text-accent">$210</div><div class="text-xs text-text-secondary">per person/day</div></div>
+                            <button class="btn-primary text-sm px-4 py-2 package-details-btn" data-package="family-diani">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Nairobi Family Explorer -->
+                <div class="package-card destination-card group">
+                    <div class="relative overflow-hidden rounded-t-2xl">
+                        <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Family in Nairobi" class="w-full h-64 object-cover group-hover:scale-110 transition-all duration-500" loading="lazy" />
+                        <div class="absolute top-4 left-4"><span class="tour-badge bg-secondary">City Family</span></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-headline font-bold text-primary mb-2">Nairobi Family Explorer</h3>
+                        <p class="text-text-secondary mb-4 text-sm">Visit the Giraffe Centre, Nairobi National Park, and local museums. Fun, educational, and safe for all ages. Includes family suite accommodation.</p>
+                        <div class="grid grid-cols-3 gap-4 mb-4 text-center text-sm">
+                            <div><div class="text-primary font-semibold">3 Days</div><div class="text-text-secondary">Duration</div></div>
+                            <div><div class="text-primary font-semibold">3-6 People</div><div class="text-text-secondary">Group Size</div></div>
+                            <div><div class="text-primary font-semibold">★☆☆</div><div class="text-text-secondary">Difficulty</div></div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="text-sm font-semibold text-primary mb-2">Includes:</div>
+                            <ul class="text-xs text-text-secondary space-y-1">
+                                <li class="flex items-center"><span class="text-success mr-2">✓</span>Family suite hotel</li>
+                                <li class="flex items-center"><span class="text-success mr-2">✓</span>Entry fees & activities</li>
+                                <li class="flex items-center"><span class="text-success mr-2">✓</span>Breakfast included</li>
+                                <li class="flex items-center"><span class="text-success mr-2">✓</span>Private transport</li>
+                            </ul>
+                        </div>
+                        <div class="flex items-center justify-between pt-4 border-t border-border">
+                            <div><div class="text-2xl font-bold text-accent">$120</div><div class="text-xs text-text-secondary">per person/day</div></div>
+                            <button class="btn-primary text-sm px-4 py-2 package-details-btn" data-package="family-nairobi">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tsavo Family Adventure -->
+                <div class="package-card destination-card group">
+                    <div class="relative overflow-hidden rounded-t-2xl">
+                        <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Family in Tsavo" class="w-full h-64 object-cover group-hover:scale-110 transition-all duration-500" loading="lazy" />
+                        <div class="absolute top-4 left-4"><span class="tour-badge bg-secondary">Family Safari</span></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-headline font-bold text-primary mb-2">Tsavo Family Adventure</h3>
+                        <p class="text-text-secondary mb-4 text-sm">Explore Tsavo’s vast wilderness with your family. Includes junior ranger program, wildlife tracking, and family tents.</p>
+                        <div class="grid grid-cols-3 gap-4 mb-4 text-center text-sm">
+                            <div><div class="text-primary font-semibold">4 Days</div><div class="text-text-secondary">Duration</div></div>
+                            <div><div class="text-primary font-semibold">4-8 People</div><div class="text-text-secondary">Group Size</div></div>
+                            <div><div class="text-primary font-semibold">★★☆</div><div class="text-text-secondary">Difficulty</div></div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="text-sm font-semibold text-primary mb-2">Includes:</div>
+                            <ul class="text-xs text-text-secondary space-y-1">
+                                <li class="flex items-center"><span class="text-success mr-2">✓</span>Family tented camp</li>
+                                <li class="flex items-center"><span class="text-success mr-2">✓</span>Junior ranger program</li>
+                                <li class="flex items-center"><span class="text-success mr-2">✓</span>Wildlife tracking</li>
+                                <li class="flex items-center"><span class="text-success mr-2">✓</span>All meals included</li>
+                            </ul>
+                        </div>
+                        <div class="flex items-center justify-between pt-4 border-t border-border">
+                            <div><div class="text-2xl font-bold text-accent">$180</div><div class="text-xs text-text-secondary">per person/day</div></div>
+                            <button class="btn-primary text-sm px-4 py-2 package-details-btn" data-package="family-tsavo">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Honeymoon Section -->
+    <section class="section-padding bg-surface" id="honeymoon">
+        <div class="container-custom">
+            <h2 class="section-title text-primary mb-6">Honeymoon & Romance</h2>
+            <p class="text-text-secondary mb-8 max-w-2xl">Celebrate your love with a romantic Kenyan escape. Private game drives, candlelit dinners, and breathtaking sunsets await you and your partner.</p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Honeymoon Safari Package -->
+                <div class="package-card destination-card group" data-category="honeymoon" data-duration="8" data-price="650" data-group="couple">
+                    <div class="relative overflow-hidden rounded-t-2xl">
+                        <img src="https://images.unsplash.com/photo-1571115764595-644a1f56a55c?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Romantic safari sunset in Samburu" class="w-full h-64 object-cover group-hover:scale-110 transition-all duration-500" loading="lazy" onerror="this.src='https://images.pexels.com/photos/631317/pexels-photo-631317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        <div class="absolute top-4 left-4">
+                            <span class="tour-badge bg-warning">Honeymoon Special</span>
+                        </div>
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full px-3 py-1">
+                            <div class="rating-stars text-sm">
+                                <span class="text-accent">★★★★★</span>
+                                <span class="text-primary font-semibold ml-1">4.9</span>
+                            </div>
+                        </div>
+                        <div class="absolute bottom-4 right-4 bg-error text-white rounded-full px-3 py-1 text-sm font-semibold">
+                            ❤️ Romance
+                        </div>
+                    </div>
+                    
+                    <div class="p-6">
+                        <h3 class="text-xl font-headline font-bold text-primary mb-2">Romantic Samburu Escape</h3>
+                        <p class="text-text-secondary mb-4 text-sm line-clamp-3">Intimate safari experience in Samburu with private game drives, romantic dinners under stars, couples spa treatments, and exclusive accommodations.</p>
+                        
+                        <div class="grid grid-cols-3 gap-4 mb-4 text-center text-sm">
+                            <div>
+                                <div class="text-primary font-semibold">8 Days</div>
+                                <div class="text-text-secondary">Duration</div>
+                            </div>
+                            <div>
+                                <div class="text-primary font-semibold">2 People</div>
+                                <div class="text-text-secondary">Couples Only</div>
+                            </div>
+                            <div>
+                                <div class="text-primary font-semibold">★★★☆</div>
+                                <div class="text-text-secondary">Difficulty</div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <div class="text-sm font-semibold text-primary mb-2">Includes:</div>
+                            <ul class="text-xs text-text-secondary space-y-1">
+                                <li class="flex items-center"><span class="text-success mr-2">✓</span>Private luxury tented suite</li>
+                                <li class="flex items-center"><span class="text-success mr-2">✓</span>Romantic dinners & champagne</li>
+                                <li class="flex items-center"><span class="text-success mr-2">✓</span>Couples spa treatments</li>
+                                <li class="flex items-center"><span class="text-success mr-2">✓</span>Private vehicle & guide</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="flex items-center justify-between pt-4 border-t border-border">
+                            <div>
+                                <div class="text-2xl font-bold text-accent">$650</div>
+                                <div class="text-xs text-text-secondary">per person/day</div>
+                            </div>
+                            <div class="flex space-x-2">
+                                <button class="btn-primary text-sm px-4 py-2 package-details-btn" data-package="honeymoon-samburu">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solo Travelers Section -->
+    <section class="section-padding" id="solo">
+        <div class="container-custom">
+            <h2 class="section-title text-primary mb-6">Solo Travelers</h2>
+            <p class="text-text-secondary mb-8 max-w-2xl">Explore Kenya on your own terms. Join small group tours, meet like-minded adventurers, and enjoy the freedom of solo travel with the safety and support of our expert guides.</p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Solo Backpacking Adventure -->
+                <div class="package-card destination-card group" data-category="solo" data-duration="10" data-price="95" data-group="solo">
+                    <div class="relative overflow-hidden rounded-t-2xl">
+                        <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Solo traveler in Tsavo National Park" class="w-full h-64 object-cover group-hover:scale-110 transition-all duration-500" loading="lazy" onerror="this.src='https://images.pexels.com/photos/1661546/pexels-photo-1661546.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        <div class="absolute top-4 left-4">
+                            <span class="tour-badge bg-success">Solo Adventure</span>
+                        </div>
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full px-3 py-1">
+                            <div class="rating-stars text-sm">
+                                <span class="text-accent">★★★★☆</span>
+                                <span class="text-primary font-semibold ml-1">4.7</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="p-6">
+                        <h3 class="text-xl font-headline font-bold text-primary mb-2">Solo Explorer Package</h3>
+                        <p class="text-text-secondary mb-4 text-sm line-clamp-3">Perfect for independent travelers seeking adventure. Explore Tsavo's vastness with like-minded solo travelers in small groups with flexible itineraries.</p>
+                        
+                        <div class="grid grid-cols-3 gap-4 mb-4 text-center text-sm">
+                            <div>
+                                <div class="text-primary font-semibold">10 Days</div>
+                                <div class="text-text-secondary">Duration</div>
+                            </div>
+                            <div>
+                                <div class="text-primary font-semibold">Solo/Shared</div>
+                                <div class="text-text-secondary">Group Style</div>
+                            </div>
+                            <div>
+                                <div class="text-primary font-semibold">★★★☆</div>
+                                <div class="text-text-secondary">Difficulty</div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <div class="text-sm font-semibold text-primary mb-2">Includes:</div>
+                            <ul class="text-xs text-text-secondary space-y-1">
+                                <li class="flex items-center"><span class="text-success mr-2">✓</span>Shared/single accommodation</li>
+                                <li class="flex items-center"><span class="text-success mr-2">✓</span>Flexible daily activities</li>
+                                <li class="flex items-center"><span class="text-success mr-2">✓</span>Small group experience</li>
+                                <li class="flex items-center"><span class="text-success mr-2">✓</span>Solo traveler meetups</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="flex items-center justify-between pt-4 border-t border-border">
+                            <div>
+                                <div class="text-2xl font-bold text-accent">$95</div>
+                                <div class="text-xs text-text-secondary">per person/day</div>
+                            </div>
+                            <div class="flex space-x-2">
+                                <button class="btn-primary text-sm px-4 py-2 package-details-btn" data-package="solo-tsavo">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Safari & Beach Section -->
+    <section class="section-padding bg-surface" id="coastal">
+        <div class="container-custom">
+            <h2 class="section-title text-primary mb-6">Safari & Beach Combos</h2>
+            <p class="text-text-secondary mb-8 max-w-2xl">The best of both worlds: thrilling wildlife safaris and relaxing days on Kenya's stunning Indian Ocean coast. Perfect for those who want it all!</p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Coastal Safari Combo -->
+                <div class="package-card destination-card group" data-category="luxury" data-duration="12" data-price="550" data-group="small">
+                    <div class="relative overflow-hidden rounded-t-2xl">
+                        <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Diani Beach luxury resort" class="w-full h-64 object-cover group-hover:scale-110 transition-all duration-500" loading="lazy" onerror="this.src='https://images.pexels.com/photos/1320684/pexels-photo-1320684.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        <div class="absolute top-4 left-4">
+                            <span class="tour-badge">Safari & Beach</span>
+                        </div>
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full px-3 py-1">
+                            <div class="rating-stars text-sm">
+                                <span class="text-accent">★★★★★</span>
+                                <span class="text-primary font-semibold ml-1">4.8</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="p-6">
+                        <h3 class="text-xl font-headline font-bold text-primary mb-2">Ultimate Kenya Safari & Beach</h3>
+                        <p class="text-text-secondary mb-4 text-sm line-clamp-3">The perfect combination: thrilling safari adventures followed by relaxation at Diani Beach's pristine white sands and luxury resorts.</p>
+                        
+                        <div class="grid grid-cols-3 gap-4 mb-4 text-center text-sm">
+                            <div>
+                                <div class="text-primary font-semibold">12 Days</div>
+                                <div class="text-text-secondary">Duration</div>
+                            </div>
+                            <div>
+                                <div class="text-primary font-semibold">2-8 People</div>
+                                <div class="text-text-secondary">Group Size</div>
+                            </div>
+                            <div>
+                                <div class="text-primary font-semibold">★★☆☆</div>
+                                <div class="text-text-secondary">Difficulty</div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <div class="text-sm font-semibold text-primary mb-2">Includes:</div>
+                            <ul class="text-xs text-text-secondary space-y-1">
+                                <li class="flex items-center"><span class="text-success mr-2">✓</span>Safari lodges & beach resort</li>
+                                <li class="flex items-center"><span class="text-success mr-2">✓</span>Domestic flights included</li>
+                                <li class="flex items-center"><span class="text-success mr-2">✓</span>Water sports & activities</li>
+                                <li class="flex items-center"><span class="text-success mr-2">✓</span>Cultural experiences</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="flex items-center justify-between pt-4 border-t border-border">
+                            <div>
+                                <div class="text-2xl font-bold text-accent">$550</div>
+                                <div class="text-xs text-text-secondary">per person/day</div>
+                            </div>
+                            <div class="flex space-x-2">
+                                <button class="btn-primary text-sm px-4 py-2 package-details-btn" data-package="safari-beach">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews Section (unchanged) -->
+    <section class="section-padding bg-surface">
+        <div class="container-custom">
+            <div class="text-center mb-16">
+                <h2 class="section-title text-primary mb-4">What Our Adventurers Say</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Real experiences from travelers who've discovered the magic of Kenya with us
+                </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="card">
+                    <div class="mb-4">
+                        <div class="rating-stars text-lg mb-2">
+                            <span class="text-accent">★★★★★</span>
+                        </div>
+                        <h3 class="font-headline font-semibold text-primary mb-2">Unforgettable Luxury Safari</h3>
+                        <p class="testimonial-quote text-sm mb-4">
+                            "The Ultimate Maasai Mara experience exceeded all expectations. The luxury tented camp was incredible, and our guide John's knowledge of wildlife was amazing. Saw the Big Five!"
+                        </p>
+                        <div class="flex items-center space-x-3">
+                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b789?q=80&w=150&h=150&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Sarah Johnson" class="w-12 h-12 rounded-full object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=2'; this.onerror=null;" />
+                            <div>
+                                <div class="font-semibold text-primary text-sm">Sarah Johnson</div>
+                                <div class="text-text-secondary text-xs">United Kingdom • July 2024</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="card">
+                    <div class="mb-4">
+                        <div class="rating-stars text-lg mb-2">
+                            <span class="text-accent">★★★★★</span>
+                        </div>
+                        <h3 class="font-headline font-semibold text-primary mb-2">Perfect Family Adventure</h3>
+                        <p class="testimonial-quote text-sm mb-4">
+                            "Traveled with our two kids (8 & 12). The Family Discovery Safari was perfectly tailored for children. Educational, exciting, and safe. Kids are still talking about it!"
+                        </p>
+                        <div class="flex items-center space-x-3">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=150&h=150&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Michael Chen" class="w-12 h-12 rounded-full object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=2'; this.onerror=null;" />
+                            <div>
+                                <div class="font-semibold text-primary text-sm">Michael Chen</div>
+                                <div class="text-text-secondary text-xs">Australia • August 2024</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="card">
+                    <div class="mb-4">
+                        <div class="rating-stars text-lg mb-2">
+                            <span class="text-accent">★★★★☆</span>
+                        </div>
+                        <h3 class="font-headline font-semibold text-primary mb-2">Great Budget Option</h3>
+                        <p class="testimonial-quote text-sm mb-4">
+                            "As a solo backpacker, the budget camping safari was perfect. Met amazing people, saw incredible wildlife, and the camping under stars was magical. Great value for money!"
+                        </p>
+                        <div class="flex items-center space-x-3">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=150&h=150&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Emma Rodriguez" class="w-12 h-12 rounded-full object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=2'; this.onerror=null;" />
+                            <div>
+                                <div class="font-semibold text-primary text-sm">Emma Rodriguez</div>
+                                <div class="text-text-secondary text-xs">Spain • September 2024</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <button class="btn-accent" onclick="openReviewModal()">
+                    Share Your Experience
+                    <svg class="inline-block w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        </svg></button></div></div></section>
+
+    <!-- Footer from index.html -->
+    <footer class="bg-primary-900 text-white section-padding">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <div class="flex items-center space-x-3 mb-6">
+                        <svg class="w-8 h-8 text-secondary" viewBox="0 0 60 60" fill="currentColor">
+                            <path d="M30 5L50 15v30L30 55L10 45V15L30 5z"/>
+                            <circle cx="30" cy="30" r="12" fill="#f5f1e8"/>
+                            <path d="M25 25l10 5-10 5z" fill="currentColor"/>
+                        </svg>
+                        <div>
+                            <span class="text-xl font-headline font-bold">Tembea Kenya</span>
+                            <div class="text-sm text-secondary">Mwangi Tours</div>
+                        </div>
+                    </div>
+                    <p class="text-primary-200 mb-4">
+                        Discover Kenya's natural wonders through authentic, sustainable adventures.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-headline font-semibold mb-4">Top Destinations</h4>
+                    <ul class="space-y-2 text-primary-200">
+                        <li><a href="destinations.html#maasai-mara" class="hover:text-secondary transition-fast">Maasai Mara</a></li>
+                        <li><a href="destinations.html#diani-beach" class="hover:text-secondary transition-fast">Diani Beach</a></li>
+                        <li><a href="destinations.html#mount-kenya" class="hover:text-secondary transition-fast">Mount Kenya</a></li>
+                        <li><a href="destinations.html#amboseli" class="hover:text-secondary transition-fast">Amboseli</a></li>
+                        <li><a href="destinations.html#lake-nakuru" class="hover:text-secondary transition-fast">Lake Nakuru</a></li>
+                        <li><a href="destinations.html#samburu" class="hover:text-secondary transition-fast">Samburu</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-headline font-semibold mb-4">Adventure Types</h4>
+                    <ul class="space-y-2 text-primary-200">
+                        <li><a href="#luxury" class="hover:text-secondary transition-fast">Luxury Safaris</a></li>
+                        <li><a href="#budget" class="hover:text-secondary transition-fast">Budget Adventures</a></li>
+                        <li><a href="#family" class="hover:text-secondary transition-fast">Family Friendly</a></li>
+                        <li><a href="#honeymoon" class="hover:text-secondary transition-fast">Honeymoon</a></li>
+                        <li><a href="#solo" class="hover:text-secondary transition-fast">Solo Travelers</a></li>
+                        <li><a href="#coastal" class="hover:text-secondary transition-fast">Safari & Beach</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-headline font-semibold mb-4">Contact</h4>
+                    <div class="space-y-2 text-primary-200">
+                        <div>📍 Nairobi, Kenya</div>
+                        <div>📞 +254 700 123 456</div>
+                        <div>✉️ info@tembekenya.com</div>
+                        <div>🕒 24/7 Support</div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-primary-700 pt-8 text-center text-primary-300">
+                <p>&copy; 2025 Tembea Kenya Tours. All Rights Reserved. | Explore Magical Kenya Your Way</p>
+            </div>
+        </div>
+    </footer>
+    <!-- WhatsApp Integration -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="https://wa.me/254700123456" class="bg-green-500 text-white p-4 rounded-full shadow-modal hover:bg-green-600 transition-all" target="_blank">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+            </svg>
+        </a>
+    </div>
+    <!-- Scripts -->
+    <script>
+        // Hamburger menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+        // Smooth scrolling for filter buttons and footer links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href.length > 1 && document.querySelector(href)) {
+                    e.preventDefault();
+                    document.querySelector(href).scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
